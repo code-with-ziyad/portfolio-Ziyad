@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="portfolio.css">
   <title>Ziyad Aftab | Portfolio</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
@@ -32,8 +32,8 @@
       <nav class="hidden md:flex space-x-6">
         <a href="#home" class="hover:text-blue-600">Home</a>
         <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#skills" class="hover:text-blue-600">Skills</a>
         <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
         <a href="resume.pdf" download class="bg-blue-600 text-white px-3 py-1 rounded">Resume</a>
       </nav>
@@ -44,36 +44,58 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-10 pt-24 bg-gray-50 dark:bg-gray-900 transition duration-500">
-    
-    <div class="md:w-1/2">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Ziyad 👋</h2>
 
-      <h3 id="typing" class="text-2xl text-blue-600 mb-4"></h3>
+  <!-- LEFT CONTENT -->
+  <div class="md:w-1/2 space-y-5">
 
-      <p class="mb-6 text-lg">
-        I build modern websites using HTML, Tailwind CSS & JavaScript.
-      </p>
+    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">
+      Hi, I'm 
+      <span class="bg-gradient-to-r from-blue-500 to-cyan-400 text-transparent bg-clip-text">
+        Ziyad 👋
+      </span>
+    </h2>
 
-      <a href="#projects" class="bg-blue-600 text-white px-5 py-2 rounded hover:scale-105 transition">
-        View Projects
+    <h3 id="typing" class="text-2xl text-blue-600 font-semibold"></h3>
+
+    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-md">
+      I build modern, responsive websites using HTML, Tailwind CSS & JavaScript. 
+      Focused on creating clean UI and real-world projects.
+    </p>
+
+    <div class="flex gap-4">
+      <a href="#projects" 
+         class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-xl transition duration-300">
+        🚀 View Projects
+      </a>
+
+      <a href="#" 
+         class="border border-gray-400 dark:border-gray-600 px-6 py-3 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+        📄 Resume
       </a>
     </div>
 
-    <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
-      <img src="ziyad.jpeg" class="w-72 rounded-2xl shadow-xl hover:scale-105 transition duration-500">
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div class="md:w-1/2 flex justify-center mt-12 md:mt-0">
+
+    <div class="relative">
+      
+      <!-- Glow effect -->
+      <div class="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
+
+      <!-- Image -->
+      <img src="ziyad.jpeg" 
+           class="w-80 md:w-96 rounded-3xl shadow-2xl relative z-10 hover:scale-105 transition duration-500">
+    
     </div>
 
-  </section>
+  </div>
 
-  <!-- ABOUT
-  <section id="about" class="px-10 py-20 bg-white dark:bg-gray-900">
-    <h2 class="text-3xl font-bold text-blue-600 mb-6">About Me</h2>
-    <p class="max-w-2xl">
-      I am a Computer Science student (3rd semester) at BBSUL. I completed Matric (70%) and Intermediate (71%). I love building modern web applications and learning new technologies.
-    </p>
-  </section> -->
+</section>
+
+ 
 
   <!-- EDUCATION SECTION -->
 <section id="about" class="px-10 py-20 bg-white dark:bg-gray-900">
@@ -151,7 +173,7 @@
 </section>
 
 <!-- FEATURED PROJECTS -->
-<section class="py-20 px-6 bg-gray-50">
+<section id="projects" class="py-20 px-6 bg-gray-50">
 
   <h2 class="text-4xl font-bold text-center mb-6">
     Featured Projects
@@ -177,7 +199,7 @@
 </section>
 
 <!-- TECH STACK -->
-<section class="py-20 bg-white text-center">
+<section id="skills" class="py-20 bg-white text-center">
 
   <h2 class="text-4xl font-semibold text-gray-800 mb-12">
     Tech Stack
@@ -187,8 +209,8 @@
 
     <!-- Item -->
     <div class="tech">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-      <p>PYTHON</p>
+       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+  <p>SQL</p>
     </div>
 
     <div class="tech">
@@ -205,6 +227,11 @@
       <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" />
       <p>TAILWIND</p>
     </div>
+
+    <div class="tech">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+  <p>JAVA</p>
+</div>
 
     <div class="tech">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
@@ -242,11 +269,11 @@
         </div>
         <h3 class="font-semibold text-lg">Professional Experience</h3>
       </div>
-      <ul class="text-gray-600 list-disc list-inside space-y-1">
-        <li>Development & AI Automation Intern at eOcean</li>
-        <li>Building AI-driven automation and agentic workflows</li>
-        <li>Working on real-world systems and scalable solutions</li>
-      </ul>
+     <ul class="text-gray-600 list-disc list-inside space-y-1">
+  <li>Actively working on web development projects and improving technical skills</li>
+  <li>Building responsive websites using modern technologies like Tailwind CSS and JavaScript</li>
+  <li>Focused on creating practical and real-world solutions through coding</li>
+</ul>
     </div>
 
     <!-- Skill Development -->
@@ -260,11 +287,11 @@
         </div>
         <h3 class="font-semibold text-lg">Skill Development</h3>
       </div>
-      <ul class="text-gray-600 list-disc list-inside space-y-1">
-        <li>Learning backend development</li>
-        <li>Exploring Next.js 15 and AI-driven workflows</li>
-        <li>Building foundations for agent-based automation</li>
-      </ul>
+     <ul class="text-gray-600 list-disc list-inside space-y-1">
+  <li>Learning frontend and backend web development fundamentals</li>
+  <li>Exploring basic AI automation concepts and simple workflows</li>
+  <li>Understanding the basics of AI agents and how they work</li>
+</ul>
     </div>
 
     <!-- Academics -->
@@ -278,11 +305,11 @@
         </div>
         <h3 class="font-semibold text-lg">Academics</h3>
       </div>
-      <ul class="text-gray-600 list-disc list-inside space-y-1">
-        <li>Pursuing BSCS at University of Karachi (UBIT)</li>
-        <li>Strengthening core programming fundamentals</li>
-        <li>Balancing academic learning with real-world projects</li>
-      </ul>
+    <ul class="text-gray-600 list-disc list-inside space-y-1">
+  <li>Currently pursuing BS Computer Science (3rd Semester) at BBSUL</li>
+  <li>Strengthening core programming and problem-solving skills</li>
+  <li>Building real-world projects alongside academic learning</li>
+</ul>
     </div>
 
     <!-- Exploration & Networking -->
@@ -296,33 +323,33 @@
         </div>
         <h3 class="font-semibold text-lg">Exploration & Networking</h3>
       </div>
-      <ul class="text-gray-600 list-disc list-inside space-y-1">
-        <li>Attending tech events and developer workshops</li>
-        <li>Staying updated with industry trends</li>
-        <li>Connecting with fellow developers and innovators</li>
-      </ul>
+    <ul class="text-gray-600 list-disc list-inside space-y-1">
+  <li>Exploring modern technologies and development tools</li>
+  <li>Learning through online platforms and developer communities</li>
+  <li>Continuously improving skills through practice and projects</li>
+</ul>
     </div>
 
   </div>
 </section>
 
-<section class="bg-[#0b0f19] text-gray-300 pt-12 pb-6 px-6">
+<section id="contact" class="bg-[#0b0f19] text-gray-300 pt-12 pb-6 px-6">
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
     
     <!-- Connect -->
     <div>
       <h3 class="text-white text-lg font-semibold mb-4">Connect</h3>
       <div class="flex space-x-4 text-xl">
-        <a href="#" class="hover:text-white transition">
+        <a href="https://www.instagram.com/ziyad_aftab_/  " target="_blank" class="hover:text-white transition">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="hover:text-white transition">
+        <a href="https://www.linkedin.com/in/ziyad-aftab-12b51634b/" target="_blank" class="hover:text-white transition">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" class="hover:text-white transition">
+        <a href="https://github.com/code-with-ziyad" target="_blank" class="hover:text-white transition">
           <i class="fab fa-github"></i>
         </a>
-        <a href="#" class="hover:text-white transition">
+        <a href="#" target="_blank" class="hover:text-white transition">
           <i class="fab fa-x-twitter"></i>
         </a>
       </div>
